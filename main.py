@@ -1,6 +1,10 @@
 from gtts import gTTS
+import os # to open the mp3 file automatically we imported
 
-text = "Hello World How Are You !!" #text that we want to convert
+#text = "Hello World How Are You !!" #text that we want to convert
+
+abc = open("sample.txt")
+text = abc.read()
 
 language = "en" #the language what we use is English
 
