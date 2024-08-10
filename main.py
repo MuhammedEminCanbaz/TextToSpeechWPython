@@ -1,5 +1,5 @@
 from gtts import gTTS
-import os # to open the mp3 file automatically we imported
+import os
 
 #text = "Hello World How Are You !!" #text that we want to convert
 
@@ -8,7 +8,9 @@ text = abc.read()
 
 language = "en" #the language what we use is English
 
-obj = gTTS(text = text,lang=language,slow=False)
+obj = gTTS(text = text, lang=language, slow=False)
 
 obj.save("sample.mp3") #the name of the mp3 file that we want to listen
+
+os.system("sample.mp3")
 
